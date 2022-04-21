@@ -1,0 +1,115 @@
+.Blogs{
+    display: grid;
+}
+.BlogHolder{
+    position: center;
+    /* display: flex; */
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 5px;
+    margin: 5rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+}
+.Blogs-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.blog__card{
+    
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    /* align-content: center;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: aliceblue; */
+}
+
+.blog__card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.blog__icon{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.blog__card h5{
+    font-size: 1rem;
+}
+.blog__card small{
+    font-size: 0.75rem;
+    color: var(--color-light);
+
+}
+
+.Blog-Text{
+    margin: 5rem;
+    align-self: center;
+    width: 75%;
+    padding: 5px;
+    border: solid 2px;
+    background:var(--color-bg-variant) ;
+    text-align: center;
+    font: white;
+}
+/*=============Tablet=============*/
+@media screen and (max-width: 1024px){
+    .about__container{
+        /* background-color: red; */
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about__me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .about__content p{
+        margin: 1rem 0 1.5rem
+    }
+}
+/*=============mobile===============*/
+@media screen and (max-width: 600px){
+    /* .container{
+        /* background-color: rgb(99, 0, 230); 
+    } */
+    .Blogs{
+        margin-top: 3rem;
+    }
+    .BlogHolder{
+        text-align: center;
+        width: 100%;
+        margin: 3rem auto 3rem;
+    }
+    .Blogs-cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__content{
+        text-align: center;
+    }
+    .about__content p{
+        margin: 1.5rem 0;
+    }
+    .Blog-Text{
+        padding: 5px;
+        border: solid 2px;
+        background:var(--color-bg-variant) ;
+        text-align: left;
+        font: white;
+    }
+}
+    

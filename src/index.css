@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(134, 1, 56); */
+}
+:root{
+    --color-bg:#62a399;
+    --color-bg-variant: #007592;
+    --color-primary: #f3166b;
+    --color-primary-variant: #ff1973;
+    --color-white: white;
+    --color-light: rgba(255, 255, 255, 0.568);
+
+    --container-width-lg: 75%;
+    --container-width-md: 100%;
+    --container-width-ms: 90%;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.8;
+    /* background-image: ; */
+}
+.App{
+    background-color: #005368;
+    margin-left: 12%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+}
+
+/* =================== General Components ====================*/
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8rem;
+}
+
+section> h2, section>h5{
+    text-align: center;
+    color: var(--color-light);
+}
+section>h2{
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+a:hover{
+    color: var(--color-white);
+}
+.btn{
+    width:  max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+.btn-primary{
+    background:  var(--color-primary);
+    color: var(--color-bg);
+}
+img{
+    display:  block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* =======================Devices=============================*/
+
+/*=============Tablet=============*/
+@media screen and (max-width: 900px){
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+    .App{
+        width: 100%;
+        margin-left: 13px;
+        /* margin-right: 5px; */
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+    }
+}
+/*=============mobile===============*/
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    section > h2{
+        margin-top: 2rem;
+    }
+    .App{
+        width: 95%;
+        margin-left: 10px;
+        /* margin-right: 5px; */
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+    }
+}
+
+/*==============================================*/
+
+
+/* .NavList{
+    display: flex;
+    padding: 2px;
+} */
+/* .NavList li a{
+    padding: 50px;
+} */
+
+
+
+
+
+
+
+
+/* ====================Practical Stuff ===================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tweet {
+    display: flex;
+    background-color: rgb(50, 71, 80);
+    border: 1px solid rgb(4, 86, 110);
+    border-radius: 5px;
+    width: 500px;
+    min-height: 70px;
+    padding: 10px;
+    margin: 5px;
+
+}
+.TweetContent{
+    background-color: #9ecce7;
+    border-radius: 5px;
+    padding: 10px;
+    margin:1px;
+}
+
+.UserProfileImage{
+    margin:5px;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    /* padding:10px; */
+}
+
+.userImage{
+    margin:5px;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    /* padding:10px; */
+}
+.time{
+    padding-left: 0.3em;
+    color: #005368;
+}
+.time ::before{
+    content: "\00b7";
+    padding-right: 0.3em;
+}
+.Buttons{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+.Buttons i{
+    width: 60px;
+}
+.DiceGame{
+    display: flexbox;
+    align-content: center;
+    background-color: #005368;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 500px;
+}
+.Die{
+    font-size:5em;
+    padding:0.25em;
+    color:rgb(216, 169, 41);
+}
+
+.DiceHolder{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* font-size: 5em; */
+}
